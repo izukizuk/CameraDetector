@@ -18,7 +18,7 @@ class CameraDataReader(val ctx: Context) {
         val cameraDataList = ArrayList<CameraData>()//Creating an empty arraylist
     }
 
-    fun read2(){
+    fun read2(){ 
         val inputStream : InputStream = ctx.assets.open("NPA_TD1.csv")
         val isr = InputStreamReader(inputStream)
         val fileReader = BufferedReader(isr)
